@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura da viewport para centralização vertical */
+    margin: 0; /* Remove a margem padrão */
+}
+
+.carrossel {
+    max-width: 600px;
+    position: relative; /* Necessário para os botões */
+    overflow: hidden;
+}
+
+.imagens {
+    display: flex;
+    transition: transform 0.5s ease; /* Transição suave */
+    justify-content: center; /* Centraliza horizontalmente as imagens */
+}
+
+.imagens img {
+    max-width: 100%; /* Limita a largura da imagem */
+    max-height: 400px; /* Define uma altura máxima para a imagem */
+    object-fit: cover; /* Garante que a imagem mantenha a proporção */
+    display: none; /* Esconde todas as imagens inicialmente */
+}
+
+.imagens img.ativo {
+    display: block; /* Exibe apenas a imagem ativa */
+}
+span{
+    padding: 3px;
+    cursor: pointer;
+}
+span:hover{
+    cursor: pointer;
+    border-radius: 10px;
+    color: rgb(172, 172, 172);
+}
