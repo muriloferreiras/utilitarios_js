@@ -1,0 +1,18 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#head {
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.712);
+}
+#bt {
+    cursor: pointer;
+    user-select: none;
+}
+#menu {
+    background-color: gray;
+    width: 70px;
+    text-align: center;
+}
